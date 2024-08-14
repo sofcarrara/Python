@@ -52,8 +52,11 @@ while True:
             agregar_usuario()   
             
         elif accion == 3:
-            print('Listado de ususarios')
-            print(usuarios) 
+             if not usuarios :
+                print ('No hay usuarios creados')
+             else:
+                 print('Listado de ususarios')
+                 print(usuarios) 
             
         elif accion == 4:
              print('Programa finalizado. Adios!')
